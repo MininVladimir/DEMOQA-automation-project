@@ -144,7 +144,7 @@ public class Elements extends BaseTest {
         radioButton.impressiveButton(RadioButton.ImpressiveButton);
         Allure.step("Выбор радиобатона Impressive");
         radioButton.assertButton(AssertImpressiveButton, RadioButton.AssertResult);
-        Allure.step("Проверка выбофр радиобатона Impressive");
+        Allure.step("Проверка выбор радиобатона Impressive");
     }
 
     @Test (description = "WebTables", priority = 5)

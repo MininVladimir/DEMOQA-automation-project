@@ -29,7 +29,6 @@ public class DynamicProperties extends Methods {
 
     public void buttonColorChange(By locator) {
         scrollToElement(locator);
-        waitElementIsVisible(locator);
         waitPresenceOfElementLocated(locator);
     }
 
