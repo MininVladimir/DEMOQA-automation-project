@@ -1,0 +1,12 @@
+<suite name = "DEMOQA Tests">
+    <test name = "My tests">
+        <classes>
+            <class name = "TestClasses.Elements" />
+            <class name = "TestClasses.PractiseForm" />
+            <class name = "TestClasses.AlertsFrameAndWindows" />
+            <class name = "TestClasses.Widgets" />
+            <class name = "TestClasses.Interactions" />
+            <class name = "TestClasses.BookStoreApplication" />
+        </classes>
+    </test>
+</suite>
