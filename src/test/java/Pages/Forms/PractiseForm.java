@@ -167,102 +167,82 @@ public class PractiseForm extends Methods {
     }
 
     public void assertStudentNameLabel(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertStudentNameValue(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertStudentEmailLabel(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertStudentEmailValue(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertGenderLabel(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertGenderValue(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertMobileLabel(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertMobileValue(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertDateOfBirthLabel(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertDateOfBirthValue(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertSubjectsLabel(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertSubjectsValue(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertHobbiesLabel(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertHobbiesValue(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertPictureLabel(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertPictureValue(By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextIsEmpty(locator);
     }
 
     public void assertAddressLabel(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertAddressValue(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertStateAndCityLabel(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertStateAndCityValue(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 }

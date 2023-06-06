@@ -24,12 +24,10 @@ public class BrokenLinksImages extends Methods {
     }
 
     public void assertErrorHead(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertErrorDescription(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 

@@ -31,7 +31,6 @@ public class RadioButton extends Methods {
     }
 
     public void assertButton(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 }

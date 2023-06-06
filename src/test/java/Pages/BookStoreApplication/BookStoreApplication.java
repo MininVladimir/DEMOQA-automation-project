@@ -148,22 +148,18 @@ public class BookStoreApplication extends Methods {
     }
 
     public void assertSearchBook1(By locator){
-        waitElementIsVisible(locator);
         assertTrueElementIsDisplayed(locator);
     }
 
     public void assertSearchBook2(By locator){
-        waitElementIsVisible(locator);
         assertTrueElementIsDisplayed(locator);
     }
 
     public void assertSearchBook3(By locator){
-        waitElementIsVisible(locator);
         assertTrueElementIsDisplayed(locator);
     }
 
     public void assertSearchBook4(By locator){
-        waitElementIsVisible(locator);
         assertTrueElementIsDisplayed(locator);
     }
 

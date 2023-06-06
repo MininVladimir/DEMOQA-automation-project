@@ -25,12 +25,10 @@ public class ModalDialogs extends Methods {
     }
 
     public void assertSmallModalHead(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertSmallModalBody(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
@@ -43,12 +41,10 @@ public class ModalDialogs extends Methods {
     }
 
     public void assertLargeModalHead(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertLargeModalBody(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 

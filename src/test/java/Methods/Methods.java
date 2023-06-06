@@ -152,6 +152,7 @@ public class Methods extends DataProperties {
     }
 
     public void assertTrueFindElementGetTextContains(String value, By locator){
+        waitElementIsVisible(locator);
         Assert.assertTrue(findElement(locator).getText().contains(value));
     }
 
@@ -160,22 +161,27 @@ public class Methods extends DataProperties {
     }
 
     public void assertTrueElementIsDisplayed(By locator){
+        waitElementIsVisible(locator);
         Assert.assertTrue(findElement(locator).isDisplayed());
     }
 
     public void assertTrueElementIsEnabled(By locator){
+        waitElementIsVisible(locator);
         Assert.assertTrue(findElement(locator).isEnabled());
     }
 
     public void assertTrueElementIsSelected(By locator){
+        waitElementIsVisible(locator);
         Assert.assertTrue(findElement(locator).isSelected());
     }
 
     public void assertTrueFindElementGetTextIsEmpty(By locator){
+        waitElementIsVisible(locator);
         Assert.assertTrue(findElement(locator).getText().isEmpty());
     }
 
     public void assertTrueFindElementGetAttributeContains(By locator, String Attribute, String AttributeValue){
+        waitElementIsVisible(locator);
         Assert.assertTrue(findElement(locator).getAttribute(Attribute).contains(AttributeValue));
     }
 }

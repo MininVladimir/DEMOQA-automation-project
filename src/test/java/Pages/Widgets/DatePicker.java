@@ -54,7 +54,6 @@ public class DatePicker extends Methods {
     }
 
     public void assertDate(By locator, String Attribute, String AttributeValue){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetAttributeContains(locator, Attribute, AttributeValue);
     }
 }

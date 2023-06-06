@@ -79,7 +79,6 @@ public class Links extends Methods {
     }
 
     public void assertNotFoundLink(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 }

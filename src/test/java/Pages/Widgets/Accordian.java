@@ -27,12 +27,10 @@ public class Accordian extends Methods {
     }
 
     public void assertAccordian1Name(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertAccordian1Text(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
@@ -45,17 +43,14 @@ public class Accordian extends Methods {
     }
 
     public void assertAccordian2Name(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertAccordian2_1Text(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertAccordian2_2Text(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
@@ -68,13 +63,10 @@ public class Accordian extends Methods {
     }
 
     public void assertAccordian3Name(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertAccordian3Text(String value, By locator){
-
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
         }
 

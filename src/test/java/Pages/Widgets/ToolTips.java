@@ -26,7 +26,6 @@ public class ToolTips extends Methods {
     }
 
     public void assertButtonTooltip(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
@@ -37,7 +36,6 @@ public class ToolTips extends Methods {
     }
 
     public void assertTextFieldTooltip(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
@@ -48,7 +46,6 @@ public class ToolTips extends Methods {
     }
 
     public void assertLinkContraryTooltip(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
@@ -59,7 +56,6 @@ public class ToolTips extends Methods {
     }
 
     public void assertLink1_30_32Tooltip(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 }

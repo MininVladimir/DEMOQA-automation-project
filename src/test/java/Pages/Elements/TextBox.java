@@ -48,22 +48,18 @@ public class TextBox extends Methods {
     }
 
     public void assertTextBoxName(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertTextBoxEmail(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertTextBoxCurrentAddress(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertPermanentAddress(String value, By locator) {
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 }

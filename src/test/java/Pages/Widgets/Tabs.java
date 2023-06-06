@@ -27,7 +27,6 @@ public class Tabs extends Methods {
     }
 
     public void assertTabWhat(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
@@ -36,12 +35,10 @@ public class Tabs extends Methods {
     }
 
     public void assertTabOrigin_1(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
     public void assertTabOrigin_2(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 
@@ -50,7 +47,6 @@ public class Tabs extends Methods {
     }
 
     public void assertTabUse(String value, By locator){
-        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 }

@@ -21,7 +21,7 @@ import static Properties.BrowserProperties.*;
 
 public class BaseTest{
 
-    protected static WebDriver driver;
+    protected WebDriver driver;
     protected MainPage mainPage;
 
     @BeforeSuite(alwaysRun = true)
