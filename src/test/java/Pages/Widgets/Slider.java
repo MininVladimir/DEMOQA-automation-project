@@ -18,7 +18,6 @@ public class Slider extends Methods {
 
     public void dragAndDropSlider(By locator, int xOffsetSlider, int yOffsetSlider){
         scrollToElement(locator);
-        waitElementToBeClickable(locator);
         dragAndDropBy(locator, xOffsetSlider, yOffsetSlider);
     }
 

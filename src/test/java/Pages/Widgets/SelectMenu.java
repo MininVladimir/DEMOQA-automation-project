@@ -25,6 +25,7 @@ public class SelectMenu extends Methods {
     public static final By MultiSelectDropDown_BlackOption = By.xpath("//div[text()='Black']");
     public static final By MultiSelectDropDown_BlackOptionDelete = By.xpath("(//div[@class='css-xb97g8'])[2]");
 
+    public static final By StandartMultiSelect = By.xpath("//b[text()='Standard multi select']");
     public static final By StandartMultiSelect_Volvo = By.xpath("//option[@value='volvo']");
     public static final By StandartMultiSelect_Saab = By.xpath("//option[@value='saab']");
     public static final By StandartMultiSelect_Audi = By.xpath("//option[@value='audi']");
@@ -85,12 +86,13 @@ public class SelectMenu extends Methods {
         assertTrueFindElementGetTextContains(value, locator);
     }
 
-    public void standartMultiSelect_VolvoClickAndHold(By locator){
-        clickAndHold(locator);
+    public void standardMultiSelect(By locator){
+        scrollToElement(locator);
+        visibleElementClick(locator);
     }
 
-    public void moveToStandartMultiSelect_SaabAndRelease(By locator){
-        moveToElementAndRelease(locator);
+    public void standartMultiSelect_VolvoClickAndHoldMoveToSaabAndRelease(By locator1, By locator2){
+        clickAndHoldMoveToElementAndRelease(locator1, locator2);
     }
 
     public void standartMultiSelect_AudiClickWithCtrl(By locator) {

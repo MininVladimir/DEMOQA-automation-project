@@ -22,17 +22,17 @@ public class Buttons extends Methods {
 
     public void doubleClick(By locator) {
         scrollToElement(locator);
-        waitElementIsVisible(locator);
+        waitElementToBeClickable(locator);
         leftButtonDoubleClick(locator);
     }
 
     public void rightClick(By locator) {
         scrollToElement(locator);
-        waitElementIsVisible(locator);
+        waitElementToBeClickable(locator);
         contextClick(locator);
     }
 
-    public void click(By locator) {
+    public void simpleClick(By locator) {
         visibleElementClick(locator);
     }
 

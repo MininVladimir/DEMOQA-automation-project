@@ -217,7 +217,7 @@ public class Elements extends BaseTest {
         Allure.step("Клик по Elements");
         buttons = subMenu.elementsMenu5(SubMenues.Buttons);
         Allure.step("Клик по Buttons");
-        buttons.click(Buttons.Click);
+        buttons.simpleClick(Buttons.Click);
         Allure.step("ЛКМ клик по кнопке Click Me");
         buttons.assertClick(AssertClick, Buttons.AssertClick);
         Allure.step("Проверка результата ЛКМ клика");

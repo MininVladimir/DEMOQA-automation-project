@@ -79,6 +79,8 @@ public class Links extends Methods {
     }
 
     public void assertNotFoundLink(String value, By locator){
+        scrollToElement(locator);
+        waitElementIsVisible(locator);
         assertTrueFindElementGetTextContains(value, locator);
     }
 }

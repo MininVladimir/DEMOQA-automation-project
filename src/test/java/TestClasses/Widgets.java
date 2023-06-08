@@ -190,7 +190,7 @@ public class Widgets extends BaseTest {
     }
 
     @Test(description = "Use", priority = 40)
-    public void Tabs3() {
+    public void tabs3() {
         subMenu = mainPage.mainPageMenu4(MainPage.Widgets);
         Allure.step("Клик по Widgets");
         tabs = subMenu.widgetsMenu6(SubMenues.Tabs);
@@ -333,10 +333,10 @@ public class Widgets extends BaseTest {
         Allure.step("Клик по Widgets");
         selectMenu = subMenu.widgetsMenu9(SubMenues.SelectMenu);
         Allure.step("Клик по SelectMenu");
-        selectMenu.standartMultiSelect_VolvoClickAndHold(SelectMenu.StandartMultiSelect_Volvo);
-        Allure.step("Скрол к полю StandartMultiSelect, click and hold по Volvo");
-        selectMenu.moveToStandartMultiSelect_SaabAndRelease(SelectMenu.StandartMultiSelect_Saab);
-        Allure.step("Release на Volvo");
+        selectMenu.standardMultiSelect(SelectMenu.StandartMultiSelect);
+        Allure.step("Скрол к полю StandartMultiSelect");
+        selectMenu.standartMultiSelect_VolvoClickAndHoldMoveToSaabAndRelease(SelectMenu.StandartMultiSelect_Volvo, SelectMenu.StandartMultiSelect_Saab);
+        Allure.step("Выбор Volvo и Saab(зажимание ЛКМ мыши)");
         selectMenu.standartMultiSelect_AudiClickWithCtrl(SelectMenu.StandartMultiSelect_Audi);
         Allure.step("Клик по Audi с зажатым Ctrl");
         selectMenu.assertStandartMultiSelect_Volvo(SelectMenu.StandartMultiSelect_Volvo);

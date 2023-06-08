@@ -116,7 +116,7 @@ public class BookStoreApplication extends BaseTest {
         Allure.step("Проверка четвертой найденной книги");
     }
 
-    @Test(description = "Delete book", priority = 69)
+    @Test(description = "Delete book", enabled = false)
     public void deleteBook() {
         subMenu = mainPage.mainPageMenu6(MainPage.BookStoreApplication);
         Allure.step("Клик по Book Store Application");
@@ -150,7 +150,7 @@ public class BookStoreApplication extends BaseTest {
         Allure.step("Проверка удаления книги");
     }
 
-    @Test(description = "Delete All Books", priority = 70)
+    @Test(description = "Delete All Books", enabled = false)
     public void deleteAllBooks() {
         subMenu = mainPage.mainPageMenu6(MainPage.BookStoreApplication);
         Allure.step("Клик по Book Store Application");

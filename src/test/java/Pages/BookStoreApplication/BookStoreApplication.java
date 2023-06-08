@@ -168,6 +168,7 @@ public class BookStoreApplication extends Methods {
     }
 
     public void addBook(By locator){
+        scrollToElement(locator);
         visibleElementClick(locator);
     }
 

@@ -99,6 +99,7 @@ public class Methods extends DataProperties {
     }
 
     public void dragAndDropBy(By locator, int xOffset, int yOffset){
+        waitElementToBeClickable(locator);
         new Actions(driver).dragAndDropBy(findElement(locator), xOffset, yOffset).perform();
     }
 
@@ -127,18 +128,14 @@ public class Methods extends DataProperties {
     }
 
     public void moveToElement(By locator){
+        waitElementIsVisible(locator);
         new Actions(driver).moveToElement(findElement(locator)).perform();
     }
 
-    public void clickAndHold(By locator){
-        scrollToElement(locator);
-        waitElementToBeClickable(locator);
-        new Actions(driver).clickAndHold(findElement(locator)).perform();
-    }
-
-    public void moveToElementAndRelease(By locator){
-        waitElementIsVisible(locator);
-        new Actions(driver).moveToElement(findElement(locator)).release().perform();
+    public void clickAndHoldMoveToElementAndRelease(By locator1, By locator2){
+        scrollToElement(locator1);
+        waitElementToBeClickable(locator1);
+        new Actions(driver).clickAndHold(findElement(locator1)).moveToElement(findElement(locator2)).release().build().perform();
     }
 
     public void clickToElementWithCtrl(By locator){

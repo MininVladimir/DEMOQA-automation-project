@@ -42,7 +42,7 @@ public class Selectable extends Methods {
     }
 
     public void grid(By locator){
-        clickableElementClick(locator);
+        visibleElementClick(locator);
     }
 
     public void gridOneClick(By locator){

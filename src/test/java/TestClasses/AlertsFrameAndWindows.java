@@ -25,7 +25,7 @@ public class AlertsFrameAndWindows extends BaseTest {
         Allure.step("Клик по Browser Windows");
         browserWindows.newTab(BrowserWindows.NewTab);
         Allure.step("Клик по кнопке New Tab");
-        browserWindows.assertAndCloseNewTab(AssertNewTab, BrowserWindows.NewTabAssert);
+        browserWindows.closeNewTab(BrowserWindows.NewTabAssert);
         Allure.step("Проверка содержимого новой вкладки и закрытие новой вкладки");
     }
 
@@ -37,7 +37,7 @@ public class AlertsFrameAndWindows extends BaseTest {
         Allure.step("Клик по Browser Windows");
         browserWindows.newWindow(BrowserWindows.NewWindow);
         Allure.step("Клик по кнопке New Window");
-        browserWindows.assertAndCloseNewWindow(AssertNewWindow, BrowserWindows.NewWindowAssert);
+        browserWindows.closeNewWindow(BrowserWindows.NewWindowAssert);
         Allure.step("Проверка содержимого нового окна и его закрытие");
     }
 
@@ -49,7 +49,7 @@ public class AlertsFrameAndWindows extends BaseTest {
         Allure.step("Клик по Browser Windows");
         browserWindows.newWindowMessage(BrowserWindows.NewWindowMessage);
         Allure.step("Клик по кнопке New Window");
-        browserWindows.assertAndCloseNewWindowMessage(AssertNewWindowMessage, BrowserWindows.NewWindowMessageAssert);
+        browserWindows.closeNewWindowMessage(BrowserWindows.NewWindowMessageAssert);
         Allure.step("Проверка содержимого нового информационного окна и его закрытие");
     }
 

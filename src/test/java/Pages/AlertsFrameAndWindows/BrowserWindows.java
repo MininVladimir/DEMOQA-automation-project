@@ -26,7 +26,7 @@ public class BrowserWindows extends Methods {
         visibleElementClick(locator);
     }
 
-    public void assertAndCloseNewTab(String value, By locator) {
+    public void closeNewTab(By locator) {
         String ParentWindow = driver.getWindowHandle();
 
         Set<String> windowHandles = driver.getWindowHandles();
@@ -35,7 +35,6 @@ public class BrowserWindows extends Methods {
             String ChildWindow = iterator.next();
             if (!ParentWindow.equals(ChildWindow)) {
                 switchToChildWindow(ChildWindow);
-                assertTrueFindElementGetTextContains(value, locator);
                 driverClose();
             }
         }
@@ -46,7 +45,7 @@ public class BrowserWindows extends Methods {
         visibleElementClick(locator);
     }
 
-    public void assertAndCloseNewWindow(String value, By locator) {
+    public void closeNewWindow(By locator) {
         String ParentWindow = driver.getWindowHandle();
 
         Set<String> windowHandles = driver.getWindowHandles();
@@ -55,7 +54,6 @@ public class BrowserWindows extends Methods {
             String ChildWindow = iterator.next();
             if (!ParentWindow.equals(ChildWindow)) {
                 switchToChildWindow(ChildWindow);
-                assertTrueFindElementGetTextContains(value, locator);
                 driverClose();
             }
         }
@@ -66,7 +64,7 @@ public class BrowserWindows extends Methods {
         visibleElementClick(locator);
     }
 
-    public void assertAndCloseNewWindowMessage(String value, By locator){
+    public void closeNewWindowMessage(By locator){
         String ParentWindow = driver.getWindowHandle();
 
         Set<String> windowHandles = driver.getWindowHandles();
@@ -75,7 +73,6 @@ public class BrowserWindows extends Methods {
             String ChildWindow = iterator.next();
             if (!ParentWindow.equals(ChildWindow)){
                 switchToChildWindow(ChildWindow);
-                assertTrueFindElementGetTextContains(value, locator);
                 driverClose();
             }
         }

@@ -15,7 +15,7 @@ public class ProgressBar extends Methods {
     public static final By StartStopButton = By.xpath("//button[contains(@class,'mt-3 btn')]");
 
     public void pressStart(By locator){
-        visibleElementClick(locator);
+        clickableElementClick(locator);
     }
 
     public void pressStop(String attribute, String attributeValue, By locator1, By locator2){
