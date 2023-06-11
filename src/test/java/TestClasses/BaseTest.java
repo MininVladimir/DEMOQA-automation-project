@@ -4,6 +4,8 @@ import Interfaces.Retry;
 import MainPage.MainPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,6 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestContext;
 import org.testng.ITestNGMethod;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.time.Duration;
@@ -41,7 +44,9 @@ public class BaseTest{
     }
 
     @AfterMethod(alwaysRun = true)
-    public void tearDown(){
+    public void tearDown(ITestResult result){
+        String testName = result.getTestName();
+        Allure.getLifecycle().addAttachment(testName, "image/png", "png", ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES));
         driver.manage().deleteAllCookies();
         driver.quit();
     }
