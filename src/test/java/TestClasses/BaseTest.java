@@ -19,6 +19,9 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 import static Properties.BrowserProperties.*;
 
@@ -45,8 +48,9 @@ public class BaseTest{
 
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result){
-        String testName = result.getTestName();
-        Allure.getLifecycle().addAttachment(testName, "image/png", "png", ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES));
+        if (!result.isSuccess()){
+            takeScreenshot(result);
+        }
         driver.manage().deleteAllCookies();
         driver.quit();
     }
@@ -78,5 +82,13 @@ public class BaseTest{
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Page_Load_Timeout));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Implicitly_Wait));
+    }
+
+    public void takeScreenshot(ITestResult result){
+        String testName = result.getName();
+        LocalDate currentDate = LocalDate.now();
+        LocalTime time = LocalTime.now();
+        DateTimeFormatter currentTime = DateTimeFormatter.ofPattern("HH:mm:ss");
+        Allure.getLifecycle().addAttachment(testName + "_" + currentDate + "_" + time.format(currentTime), "image/png", "png", ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES));
     }
 }
