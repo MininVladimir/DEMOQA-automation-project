@@ -1,7 +1,7 @@
-package TestClasses;
+package TestClasses.UI;
 
 import Interfaces.Retry;
-import MainPage.MainPage;
+import Pages.MainPage.MainPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
@@ -48,11 +48,14 @@ public class BaseTest{
 
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result){
-        if (!result.isSuccess()){
-            takeScreenshot(result);
+        if (driver != null) {
+            if (!result.isSuccess()) {
+                takeScreenshot(result);
+            }
+            driver.manage().deleteAllCookies();
+            driver.quit();
+            driver = null;
         }
-        driver.manage().deleteAllCookies();
-        driver.quit();
     }
 
     public void setupBrowser(String browser) {

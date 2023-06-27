@@ -1,4 +1,4 @@
-package SubMenues;
+package Pages.SubMenues;
 
 import Methods.Methods;
 import Pages.AlertsFrameAndWindows.*;

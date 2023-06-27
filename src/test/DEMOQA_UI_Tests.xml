@@ -1,0 +1,13 @@
+<suite name = "DEMOQA UI Tests">
+    <test name = "Firefox tests">
+        <parameter name = "browser" value = "firefox" />
+        <classes>
+            <class name = "TestClasses.UI.Elements" />
+            <class name = "TestClasses.UI.PractiseForm" />
+            <class name = "TestClasses.UI.AlertsFrameAndWindows" />
+            <class name = "TestClasses.UI.Widgets" />
+            <class name = "TestClasses.UI.Interactions" />
+            <class name = "TestClasses.UI.BookStoreApplication" />
+        </classes>
+    </test>
+</suite>

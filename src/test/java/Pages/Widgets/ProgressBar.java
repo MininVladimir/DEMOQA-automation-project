@@ -32,6 +32,7 @@ public class ProgressBar extends Methods {
     }
 
     public void assertProgressBar(By locator, String attribute, String attributeValue){
+        scrollToElement(locator);
         assertTrueFindElementGetAttributeContains(locator, attribute, attributeValue);
     }
 }

@@ -1,7 +1,7 @@
-package MainPage;
+package Pages.MainPage;
 
 import Methods.Methods;
-import SubMenues.SubMenues;
+import Pages.SubMenues.SubMenues;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

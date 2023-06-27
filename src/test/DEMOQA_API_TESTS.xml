@@ -1,0 +1,10 @@
+<suite name = "DEMOQA API Tests">
+    <test name = "My API tests">
+         <classes>
+             <class name = "TestClasses.API.Registration" />
+             <class name = "TestClasses.API.Authorization" />
+             <class name = "TestClasses.API.GenerateToken" />
+             <class name = "TestClasses.API.SuccessfulE2ETest" />
+         </classes>
+    </test>
+</suite>

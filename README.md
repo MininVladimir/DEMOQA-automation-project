@@ -1,4 +1,4 @@
-# DEMOQA-Web-UI-automation-project
+# DEMOQA-automation-project (WebUI+API)
 Technologies used:
 
     Selenium WebDriver
@@ -6,4 +6,5 @@ Technologies used:
     Maven
     Java
     TestNG
+    RestAssured
     Allure

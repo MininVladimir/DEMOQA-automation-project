@@ -1,8 +1,8 @@
-package TestClasses;
+package TestClasses.UI;
 
-import MainPage.MainPage;
+import Pages.MainPage.MainPage;
+import Pages.SubMenues.SubMenues;
 import Pages.Widgets.*;
-import SubMenues.SubMenues;
 import io.qameta.allure.Allure;
 import org.testng.annotations.Test;
 
