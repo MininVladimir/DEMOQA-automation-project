@@ -101,7 +101,8 @@
                 <version>3.1.0</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/DEMOQA_Tests.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/DEMOQA_API_TESTS.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/DEMOQA_UI_TESTS.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
